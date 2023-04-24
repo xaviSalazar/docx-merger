@@ -1,4 +1,4 @@
-var JSZip = require('jszip');
+var PizZip = require('pizzip');
 var DOMParser = require('xmldom').DOMParser;
 var XMLSerializer = require('xmldom').XMLSerializer;
 
@@ -19,7 +19,7 @@ function DocxMerger(options, files) {
     this._files = [];
     var self = this;
     (files || []).forEach(function(file) {
-        self._files.push(new JSZip(file));
+        self._files.push(new PizZip(file));
     });
     this._contentTypes = {};
 
@@ -59,7 +59,7 @@ function DocxMerger(options, files) {
         Style.mergeStyles(files, this._style);
 
         files.forEach(function(zip, index) {
-            //var zip = new JSZip(file);
+            //var zip = new PizZip(file);
             var xml = zip.file("word/document.xml").asText();
             xml = xml.substring(xml.indexOf("<w:body>") + 8);
             xml = xml.substring(0, xml.indexOf("</w:body>"));
