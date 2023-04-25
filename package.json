@@ -1,5 +1,5 @@
 {
-  "name": "docx-merger",
+  "name": "@xavisalazar/docx-merger",
   "version": "0.0.0-development",
   "license": "MIT",
   "description": "Javascript Library for Merging Docx file in NodeJS and Browser Environment.",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/apurvaojas/docx-merger.git"
+    "url": "https://github.com/xaviSalazar/docx-merger.git"
   },
   "files": [
     "dist",
@@ -33,7 +33,7 @@
     "docx merge",
     "microsoft word"
   ],
-  "author": "Apurv Ojas <apurvaojas10@gmail.com>",
+  "author": "forked from Apurv Ojas <apurvaojas10@gmail.com>",
   "dependencies": {
     "pizzip": "^3.1.4",
     "xmldom": "^0.1.27"
